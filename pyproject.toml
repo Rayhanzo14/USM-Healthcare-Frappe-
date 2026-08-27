@@ -4,7 +4,7 @@ authors = [
     { name = "Rayhanz", email = "rayyan142004@gmail.com"}
 ]
 description = "Healthcare Centre System"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
