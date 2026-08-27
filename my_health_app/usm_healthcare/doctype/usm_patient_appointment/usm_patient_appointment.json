@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "APP-{YYYY}-{####}",
+ "creation": "2026-08-19 11:21:20.468989",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "practitioner",
+  "appointment_date_and_time",
+  "department",
+  "appointment_status",
+  "reason_for_visit"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Practitioner",
+   "options": "USM Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Appointment Date and Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "General Practice\nPediatrics\nCardiology\nOrthopedics\nNeurology\nEmergency"
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "appointment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appointment Status",
+   "options": "Scheduled\nChecked In\nIn Progress\nCompleted\nCancelled\nNo Show"
+  },
+  {
+   "fieldname": "reason_for_visit",
+   "fieldtype": "Small Text",
+   "label": "Reason for Visit"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-19 11:25:42.728154",
+ "modified_by": "Administrator",
+ "module": "USM Healthcare",
+ "name": "USM Patient Appointment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-19 11:42:52.704389",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medication_name",
+  "dosage",
+  "frequency",
+  "duration",
+  "total_quantity",
+  "special_instructions"
+ ],
+ "fields": [
+  {
+   "fieldname": "medication_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medication Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dosage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dosage"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Frequency",
+   "options": "Once daily\nTwice daily (BID)\nThree times a day (TID)\nFour times a day (QID)\nEvery 8 hours\nAs needed (PRN)"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "special_instructions",
+   "fieldtype": "Small Text",
+   "label": "Special Instructions"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 11:49:34.950341",
+ "modified_by": "Administrator",
+ "module": "USM Healthcare",
+ "name": "USM Prescription Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

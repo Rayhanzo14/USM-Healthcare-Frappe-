@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "LAB-{YYYY}-{####}",
+ "creation": "2026-08-19 11:27:33.921738",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nkte",
+  "amended_from",
+  "linked_encounter",
+  "patient",
+  "ordering_practitioner",
+  "test_category",
+  "specific_test_requested",
+  "urgency_level",
+  "request_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nkte",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "USM Lab Test Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "linked_encounter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Encounter",
+   "options": "USM Patient Encounter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ordering_practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ordering Practitioner",
+   "options": "USM Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Test Category",
+   "options": "Bloodwork\nImaging (X-Ray/MRI)\nPathology\nMicrobiology",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specific_test_requested",
+   "fieldtype": "Data",
+   "label": "Specific Test Requested",
+   "reqd": 1
+  },
+  {
+   "default": "Routine",
+   "fieldname": "urgency_level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Urgency Level",
+   "options": "Routine\nUrgent\nSTAT (Immediate)"
+  },
+  {
+   "default": "Ordered",
+   "fieldname": "request_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Request Status",
+   "options": "Ordered\nSample Collected\nIn Progress\nCompleted\nCancelled"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 11:33:09.115867",
+ "modified_by": "Administrator",
+ "module": "USM Healthcare",
+ "name": "USM Lab Test Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

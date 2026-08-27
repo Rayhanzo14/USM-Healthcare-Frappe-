@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "RX-.YYYY.-.####",
+ "creation": "2026-08-19 11:50:06.474814",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_llrs",
+  "amended_from",
+  "linked_encounter",
+  "patient",
+  "prescribing_practitioner",
+  "medication_list",
+  "dispensing_status",
+  "pharmacy_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_llrs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "USM Prescription",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "linked_encounter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Linked Encounter",
+   "options": "USM Patient Encounter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prescribing_practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prescribing Practitioner",
+   "options": "USM Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medication_list",
+   "fieldtype": "Table",
+   "label": "Medication List",
+   "options": "USM Prescription Item"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "dispensing_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Dispensing Status",
+   "options": "Pending\nPartially Dispensed\nFully Dispensed\nCancelled"
+  },
+  {
+   "fieldname": "pharmacy_notes",
+   "fieldtype": "Small Text",
+   "label": "Pharmacy Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-20 12:35:50.320887",
+ "modified_by": "Administrator",
+ "module": "USM Healthcare",
+ "name": "USM Prescription",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
